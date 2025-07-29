@@ -1,14 +1,21 @@
 package br.com.john.invest;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class CalculoResponse {
+
     private int periodo;
+
     private double valorFinal;
 
-    public CalculoResponse(int periodo, double valorFinal) {
-        this.periodo = periodo;
-        this.valorFinal = valorFinal;
-    }
-
-    public int getPeriodo() { return periodo; }
-    public double getValorFinal() { return valorFinal; }
+    private double valorJuros;
 }
