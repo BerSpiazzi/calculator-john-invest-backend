@@ -15,6 +15,4 @@ public class CalculoRequest {
 
     private int tempo;
 
-    private String periodicidade;
-
 }
